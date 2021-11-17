@@ -1,0 +1,21 @@
+@media (max-width: 1000.98px) {
+  .container {
+    display: flex;
+  }
+}
+
+.container {
+  margin-right: 0px;
+}
+
+.col-lg-12,
+.col-md-6,
+.col-md-3 {
+  color: blue;
+  font-size: 20px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  padding-bottom: 10px;
+}
+.form-control {
+  padding: 10px;
+}

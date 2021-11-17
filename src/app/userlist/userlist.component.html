@@ -1,0 +1,42 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card">    
+                <button (click)="getUsers()" class="btn btn-danger">Get Users</button>
+        <div class="scroll-ele">
+
+            
+<table class="table sticky">
+    <thead >
+ <tr>
+     <th >S.No.</th>
+     <th >Gender</th>
+     <th >Name</th>
+     <th >Email</th>
+     <th >Picture</th>
+    </tr>
+
+    </thead>
+<tbody class="table-primary">
+    <tr *ngFor="let user of data | paginate:{id:'listing_pagination',
+       itemsPerPage:10,
+      currentPage: page,
+      totalItems: totalRecords}; index as i">
+      <td>{{ (page - 1) * 10 + i + 1 }}</td>
+         <td>{{user.gender}}</td>
+         <td>{{user.name.first}}</td>
+         <td>{{user.email}}</td>
+    <td><img src="{{user.picture.medium}}" alt=""></td>
+</tr>
+</tbody>
+</table>
+
+<div>
+    <pagination-controls  id="listing_pagination" maxsize="5" directionlinks="true"  (pageChange)="page =$event"></pagination-controls> 
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>

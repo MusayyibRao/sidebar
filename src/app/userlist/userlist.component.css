@@ -1,0 +1,17 @@
+.container-fluid {
+  padding-top: 100px;
+}
+@media (max-width: 1000.98px) {
+  .container-fluid {
+    display: flex;
+  }
+}
+.scroll-ele {
+  height: 80vh;
+  overflow-y: scroll;
+}
+.table.sticky th {
+  position: sticky;
+  top: 0px;
+  background-color: limegreen;
+}

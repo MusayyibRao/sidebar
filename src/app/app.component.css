@@ -1,0 +1,21 @@
+.ng-sidebar-container {
+  height: 100vh;
+}
+
+::ng-deep .ng-sidebar {
+  background-color: rgb(162, 182, 232);
+  width: 200px;
+  margin-top: 58px;
+  padding: 2em 3em;
+  box-shadow: 0 0 3.5em rgba(105, 69, 235, 0.5);
+}
+
+.ng-sidebar-content {
+  background-color: royalblue;
+}
+.mat-icon {
+  position: sticky;
+
+  font-size: 50px;
+  margin-left: 10px;
+}
